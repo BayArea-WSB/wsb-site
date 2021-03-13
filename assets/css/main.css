@@ -3320,6 +3320,20 @@ input, select, textarea {
 			opacity: 1.0;
 		}
 
+		.wrapper.fade-up > .inner > .logo {
+			display: flex;
+			flex-direction: row
+		}
+		
+            .wrapper.fade-up > .inner > .logo > img{
+                width: 5em; 
+                margin: 0 20px 5px 0;
+            }
+
+            .wrapper.fade-up > .inner > .logo > h1{
+                margin: auto 0;
+            }
+			
 		.wrapper.fade-up.inactive > .inner,
 		body.is-preload .wrapper.fade-up > .inner {
 			opacity: 0;
@@ -3523,7 +3537,7 @@ input, select, textarea {
 /* Sidebar */
 
 	#sidebar {
-		padding: 2.5em 2.5em 0.5em 2.5em ;
+		padding: 0 2.5em 0 2.5em;
 		background: #312450;
 		cursor: default;
 		height: 100vh;
@@ -3536,6 +3550,14 @@ input, select, textarea {
 		width: 18em;
 		z-index: 10000;
 	}
+		#sidebar > .logo {
+			padding: 0.5em 0 0.5em 0;
+			height: 120px;
+		}
+			
+			#sidebar > .logo > img {
+				width: 100%;
+			}
 
 		#sidebar > .inner {
 			display: -moz-flex;
@@ -3558,7 +3580,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			min-height: 100%;
+			min-height: calc(100% - 120px);
 			opacity: 1;
 			width: 100%;
 		}
