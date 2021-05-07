@@ -3327,7 +3327,8 @@ input, select, textarea {
 		
             .wrapper.fade-up > .inner > .logo > img{
                 width: 5em; 
-                margin: 0 20px 5px 0;
+				height: 5em;
+                margin: 0 20px 0 0;
             }
 
             .wrapper.fade-up > .inner > .logo > h1{
